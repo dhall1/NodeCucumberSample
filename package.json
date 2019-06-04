@@ -1,0 +1,19 @@
+{
+  "name": "bddtesting",
+  "version": "1.0.0",
+  "description": "Sample Cucumber BDD Tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.19.0",
+    "chromedriver": "^74.0.0",
+    "cucumber": "^5.1.0",
+    "js-yaml": "^3.13.1",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "dependencies": {}
+}
