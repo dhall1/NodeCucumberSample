@@ -11,12 +11,13 @@ The `.gitignore`, `package-lock.json`, and `package.json` files as well as the `
     -   `specs/` - Contains the .feature files used to define tests in plain English.
     -   `step_definitions/` - Contains the actual glue code that defines the tests.
     -   `support/` - Contains utility files that may be used across all tests, such as one to load the env.yml file and another to launch a testing browser (Chrome) when testing a UI.
+    -   `hooks/` - Contains any files with hooks for the tests (Before, After, BeforeAll, etc.).
 
 ## Example Tests
 
 Tests are composed of two parts, a plain English feature file and the corresponding glue code used to run the test. For information about writing feature files, you can visit the [Cucumber website](https://cucumber.io/docs/gherkin/reference/).
 
-### API
+### API \& Environment Configuration Files
 
 This demonstrates making calls to an API using the Promise-based HTTP client package [axios](https://www.npmjs.com/package/axios) as well as loading a YAML config file using [js-yaml](https://www.npmjs.com/package/js-yaml).
 

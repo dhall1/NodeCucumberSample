@@ -1,7 +1,14 @@
+/**
+ * Author Daniel Hall
+ * Date Created: 06/05/2019
+ */
 const assert = require("assert");
 const { When, Then } = require("cucumber");
 const { exec } = require("child_process");
 
+/**
+ * Runs the ls command and saves the resulting value.
+ */
 When("I run the ls command", function() {
 	return new Promise((resolve, reject) => {
 		exec("ls", (err, stdout, stdin) => {
@@ -15,6 +22,9 @@ When("I run the ls command", function() {
 	});
 });
 
+/**
+ * Asserts that the returned value includes the expected file.
+ */
 Then("the list of files will contain the package.json file", function() {
 	assert(this.value.includes('package.json'));
 });
