@@ -2,6 +2,17 @@
 
 This project contains example tests for projects including testing a function, an API, a UI, and a system process.
 
+## Install Instructions
+
+Ensure that NodeJS and NPM are installed on your system. Clone this repo and run
+```bash
+npm install
+```
+The tests can be run using 
+```bash
+npm test
+```
+
 ## Structure
 
 The `.gitignore`, `package-lock.json`, and `package.json` files as well as the `node_modules` directory are used by the NodeJS environment and Git and do not need to be modified.
