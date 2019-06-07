@@ -4,7 +4,7 @@
   "description": "Sample Cucumber BDD Tests",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js --format json:results.json"
   },
   "author": "",
   "license": "ISC",

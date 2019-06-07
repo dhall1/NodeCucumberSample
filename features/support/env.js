@@ -11,10 +11,12 @@ const path = require("path");
  * variable TEST_ENV, or "QA1.yml" if that variable does not exist.
  */
 function loadYamlEnvFile() {
-	let configFileName = process.env.TEST_ENV || "QA1";
+	let configFile = process.env.TEST_ENV || "QA1";
+	let fileName = `${configFile}.yml`;
+	console.log(`\nUsing ${fileName} for the environment configuration file.\n\n`);
 	return yaml.safeLoad(
 		fs.readFileSync(
-			path.join(__dirname, "..", "config", `${configFileName}.yml`),
+			path.join(__dirname, "..", "config", fileName),
 			"utf8"
 		)
 	);
