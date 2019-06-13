@@ -11,7 +11,8 @@ const { exec } = require("child_process");
  */
 When("I run the ls command", function() {
 	return new Promise((resolve, reject) => {
-		exec("ls", (err, stdout, stdin) => {
+		let cmd = process.platform === "win32" ? "dir" : "ls";
+		exec(cmd, (err, stdout, stdin) => {
 			if (err) {
 				reject(err);
 			} else {
